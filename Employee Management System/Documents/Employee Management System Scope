@@ -1,0 +1,37 @@
+ 							Employee Management System(Revision 1.0)
+
+Objective:
+	Employee management system is designed to manage the employee of any organization. Where an admin can Add, Delete, and Update a new employee. Admin can manage the leaves, work of the employees. The user can manage his own profile and leaves and all other details as well.
+
+Project Modules:
+	There are two actors of the application are Admin and Employee(User)  the module specifications are
+
+Login and registration
+
+Employee Login
+	An employee can sign up and login into the application to manage his work, profile, and leaves.  Employees can check the assigned work by managers and perform the daily task accordingly. Under the profile, section employee can check their own profile and get the option to update it accordingly. Leave is another section where an employee and check his current leave status and can apply for the new leave if required.
+
+Admin Login
+	Admin can login into the application and perform operations like manage employee, manage the work of all employees, Manage the leaves of all the employee in the organization. Admin can perform Add, Delete, and Update operations.
+
+USECASES 
+
+Admin
+
+After login admin can perform the following operation.
+1.	Manage Employee (Add, Delete, Edit, Update)
+2.	Manage Salary (Add, Delete, Edit, Update)
+3.	Manage Worksheet (Add, Delete, Edit, Update)
+4.	Manage Leave (Add, Delete, Edit, Update)
+
+
+Employee
+	After login employee can manage his profile like View Work details, Leave details, Personal details etc. Admin and employee both can Add a leave request but the employee can only add leave with the status request once admin will approve or change the status. The changes will reflect in the user’s account. Similarly other this will work like salary and timesheet.
+
+Program Languages and tools to be used: 
+MySQL/Mongodb
+HTML, JSP, Servlet, CSS, JS
+Tomcat 
+Angular
+Maven, Spring Boot, Hibernate-JPA
+
