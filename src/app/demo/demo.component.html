@@ -1,0 +1,9 @@
+
+
+<ul>
+    <li *ngFor="let contact of contactList">
+        {{contact.contactName}}
+    </li>
+</ul>
+
+<button (click)="demo.getContacts();">Calling Directly</button>

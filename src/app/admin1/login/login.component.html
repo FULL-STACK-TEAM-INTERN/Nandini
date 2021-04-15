@@ -1,0 +1,17 @@
+<h4 class="text-center">Admin Login</h4>
+<div class="col-md-8 offset-md-3">
+  <form [formGroup]="loginForm">
+    <div class="form-group">
+      <label>UserId</label>
+      <input type="text" class="form-control" id="userId" name="userId" [(ngModel)]="employee.email" formControlName="userId">
+      <span *ngIf="loginForm.get('userId').touched && loginForm.get('userId').hasError('required')">Enter UserId</span>
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" class="form-control" id="password" name="password" [(ngModel)]="employee.password" formControlName="password">
+      <span *ngIf="loginForm.get('password').touched && loginForm.get('password').hasError('required')">Enter Password</span>
+    </div>
+    <button type="submit" class="btn btn-success" (click)="moveToEmployeeList();">Login</button>
+    <a routerLink="register" routerLinkActive="/" style="margin:15px;" (click)="moveToRegister();">New User?</a>
+  </form>
+</div>

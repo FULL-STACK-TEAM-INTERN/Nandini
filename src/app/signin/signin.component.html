@@ -1,0 +1,27 @@
+<div class="container">
+    <form #siginForm ="ngForm" (ngSubmit) ="loginUser(siginForm);">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="emailField" ngModel required email #emailField="ngModel">
+          <div id="emailHelp" class="form-text" *ngIf="emailField.touched && !emailField.valid">Enter email id</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" name="pass" ngModel required #pass="ngModel">
+          <div id="emailHelp" class="form-text" *ngIf="pass.touched && !pass.valid">Enter password</div>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" name="termsFeild" ngModel>
+          <label class="form-check-label" for="exampleCheck1">Agree to Terms</label>
+        </div>
+        <div class="mb-3">
+            <input type="radio" class="form-check-input" value="male" id="genderField" name="genderField" ngModel>
+            <label class="form-check-label" for="exampleCheck1">Male</label>
+          </div>
+          <div class="mb-3">
+            <input type="radio" class="form-check-input" value="female" id="genderField" name="genderField" ngModel>
+            <label class="form-check-label" for="exampleCheck1">Female</label>
+          </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!siginForm.valid">Submit</button>
+      </form>
+</div>
